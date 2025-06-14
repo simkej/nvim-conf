@@ -92,7 +92,7 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
-require'nvim-treesitter.configs'.setup {
+require('nvim-treesitter.configs').setup {
   ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
   highlight = { enable = true},
   indent = { enable = true},
@@ -100,11 +100,11 @@ require'nvim-treesitter.configs'.setup {
 
 vim.keymap.set('n', '<leader>e', ':Neotree<CR>')
 
-require'lualine'.setup {
+require('lualine').setup {
   options = {theme = 'dracula'}
 }
 
-require'mason-lspconfig'.setup {
+require('mason-lspconfig').setup {
   ensure_installed = {"lua_ls", "clangd"}
 }
 
@@ -122,5 +122,4 @@ require("telescope").setup {
     }
   }
 }
-require("telescope").load_extension("ui-select")	
-
+require("telescope").load_extension("ui-select")
