@@ -45,7 +45,9 @@ require("lazy").setup({
       },
       lazy = false,
       opts = {
-        -- fill any relevant options here
+        source_selector = {
+          winbar = true
+        }
       },
     },
     {
