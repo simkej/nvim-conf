@@ -77,6 +77,11 @@ require("lazy").setup({
         },
       },
     },
+    {
+      'windwp/nvim-autopairs',
+      event = "InsertEnter",
+      config = true
+    },
   },
   -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { "habamax" } },
@@ -123,3 +128,7 @@ require("telescope").setup {
   }
 }
 require("telescope").load_extension("ui-select")
+
+require("nvim-autopairs").setup({
+  check_ts = true,
+})
