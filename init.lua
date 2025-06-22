@@ -101,7 +101,7 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' 
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { "c", "lua", "vim", "rust", "vimdoc", "query", "markdown", "markdown_inline" },
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
   highlight = { enable = true},
   indent = { enable = true},
 }
@@ -113,7 +113,7 @@ require('lualine').setup {
 }
 
 require('mason-lspconfig').setup {
-  ensure_installed = {"lua_ls", "clangd", "rust_analyzer"}
+  ensure_installed = {"lua_ls", "clangd"}
 }
 
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
