@@ -1,2 +1,2 @@
 # nvim-conf
-Preconfigured for C and Lua.
+Preconfigured for C, Rust and Lua.
