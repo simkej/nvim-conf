@@ -1,0 +1,6 @@
+[font]
+normal = { family = "CommitMonoNerdFont", style = "Regular" }
+bold = { family = "CommitMonoNerdFont", style = "Bold" }
+italic = { family = "CommitMonoNerdFont", style = "Italic" }
+bold_italic = { family = "CommitMonoNerdFont", style = "BoldItalic" }
+size = 12.0
