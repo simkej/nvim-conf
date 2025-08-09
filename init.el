@@ -9,6 +9,8 @@
 (ido-everywhere 1)
 (global-display-line-numbers-mode 1)
 (electric-pair-mode t)
+(setq auto-save-default nil)
+(setq make-backup-files nil)
 
 ;; C stuff
 (setq c-default-style "bsd")
