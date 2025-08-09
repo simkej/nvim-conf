@@ -20,7 +20,7 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
-(defvar my-packages '(tree-sitter tree-sitter-langs catppuccin-theme rust-mode flycheck eglot corfu)
+(defvar my-packages '(tree-sitter tree-sitter-langs company catppuccin-theme rust-mode flycheck eglot)
   "Packages to install.")
   
 (defun my-install-packages ()
@@ -40,8 +40,8 @@
 (global-tree-sitter-mode)
 (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode)
 
-;; Corfu
-(global-corfu-mode)
+;; Company
+(global-company-mode)
 
 ;; Flycheck
 (global-flycheck-mode +1)
@@ -50,12 +50,14 @@
 (load-theme 'catppuccin t)
 
 
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(eglot-ignored-server-capabilities '(:documentOnTypeFormattingProvider :inlayHintProvider)))
+ '(eglot-ignored-server-capabilities '(:documentOnTypeFormattingProvider :inlayHintProvider))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
