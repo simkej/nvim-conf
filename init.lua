@@ -146,4 +146,4 @@ end)
 vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
 
 -- Use shift+4 instead of alt-gr+4 for $ when editing.
-vim.keymap.set ({ "n", "o" }, "¤", "$")
+vim.keymap.set ({ "n", "o", "v" }, "¤", "$")
