@@ -19,7 +19,7 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
-(defvar my-packages '(tree-sitter tree-sitter-langs company yasnippet catppuccin-theme rust-mode)
+(defvar my-packages '(tree-sitter tree-sitter-langs company yasnippet catppuccin-theme rust-mode simple-modeline)
   "Packages to install.")
   
 (defun my-install-packages ()
@@ -50,6 +50,9 @@
 ;; Catppuccin theme
 (load-theme 'catppuccin t)
 
+;; Simple-modeline
+(simple-modeline-mode)
+
 
 
 (custom-set-variables
@@ -59,7 +62,17 @@
  ;; If there is more than one, they won't work right.
  '(eglot-ignored-server-capabilities '(:documentOnTypeFormattingProvider :inlayHintProvider))
  '(inhibit-startup-screen t)
- '(package-selected-packages nil))
+ '(package-selected-packages nil)
+ '(simple-modeline-segments
+   '((simple-modeline-segment-modified
+      simple-modeline-segment-buffer-name
+      simple-modeline-segment-position)
+     (simple-modeline-segment-input-method simple-modeline-segment-eol
+                                           simple-modeline-segment-encoding
+                                           simple-modeline-segment-vc
+                                           simple-modeline-segment-misc-info
+                                           simple-modeline-segment-process
+                                           simple-modeline-segment-major-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
