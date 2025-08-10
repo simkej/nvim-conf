@@ -1,6 +1,3 @@
-;; Font
-(add-to-list 'default-frame-alist '(font . "CommitMonoNerdFont-12"))
-
 ;; App settings
 (menu-bar-mode 0)
 (tool-bar-mode 0)
@@ -22,7 +19,7 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
-(defvar my-packages '(tree-sitter tree-sitter-langs company yasnippet catppuccin-theme rust-mode flycheck)
+(defvar my-packages '(tree-sitter tree-sitter-langs company yasnippet catppuccin-theme rust-mode)
   "Packages to install.")
   
 (defun my-install-packages ()
@@ -44,9 +41,7 @@
 
 ;; Company
 (global-company-mode)
-
-;; Flycheck
-(global-flycheck-mode +1)
+(setq company-idle-delay 0.0)
 
 ;; Catppuccin theme
 (load-theme 'catppuccin t)
@@ -66,4 +61,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "CommitMono Nerd Font" :foundry "    " :slant normal :weight regular :height 120 :width normal)))))
