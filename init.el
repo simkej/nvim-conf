@@ -32,6 +32,9 @@
       
 (my-install-packages)
 
+;; Eglot
+(setq eglot-autoshutdown t)
+
 ;; Tree-sitter
 (require 'tree-sitter)
 (require 'tree-sitter-langs)
