@@ -22,7 +22,7 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
-(defvar my-packages '(tree-sitter tree-sitter-langs company yasnippet catppuccin-theme rust-mode flycheck eglot)
+(defvar my-packages '(tree-sitter tree-sitter-langs company yasnippet catppuccin-theme rust-mode flycheck)
   "Packages to install.")
   
 (defun my-install-packages ()
