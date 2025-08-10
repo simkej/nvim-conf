@@ -38,12 +38,11 @@
 ;; Tree-sitter
 (require 'tree-sitter)
 (require 'tree-sitter-langs)
-
-(global-tree-sitter-mode)
+(add-hook 'prog-mode-hook #'tree-sitter-mode)
 (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode)
 
 ;; Company
-(global-company-mode)
+(add-hook 'prog-mode-hook #'company-mode)
 (setq company-minimum-prefix-length 1)
 (setq company-idle-delay 0.0)
 
