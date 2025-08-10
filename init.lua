@@ -140,7 +140,7 @@ vim.keymap.set("n", "<leader>t", function()
     vim.cmd.split()
     vim.cmd.term()
     vim.cmd.wincmd("J")
-    vim.api.nvim_win_set_height(0, 15)
+    vim.api.nvim_win_set_height(0, 10)
 end)
 
 vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
