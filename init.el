@@ -19,7 +19,7 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
-(defvar my-packages '(tree-sitter tree-sitter-langs company yasnippet catppuccin-theme rust-mode doom-modeline nerd-icons)
+(defvar my-packages '(tree-sitter tree-sitter-langs company yasnippet catppuccin-theme rust-mode)
   "Packages to install.")
   
 (defun my-install-packages ()
@@ -44,11 +44,11 @@
 ;; Company
 (add-hook 'prog-mode-hook #'company-mode)
 
+;; Yasnippet
+(add-hook 'prog-mode-hook #'yas-minor-mode)
+
 ;; Catppuccin theme
 (load-theme 'catppuccin t)
-
-;; doom-modeline
-(doom-modeline-mode 1)
 
 
 
