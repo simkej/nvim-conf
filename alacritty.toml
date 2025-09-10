@@ -1,12 +1,12 @@
 [window]
 title = "Terminal"
-dimensions = { columns = 160, lines = 50 }
+dimensions = { columns = 160, lines = 45 }
 
 [font]
-normal = { family = "CommitMonoNerdFont", style = "Regular" }
-bold = { family = "CommitMonoNerdFont", style = "Bold" }
-italic = { family = "CommitMonoNerdFont", style = "Italic" }
-bold_italic = { family = "CommitMonoNerdFont", style = "BoldItalic" }
+normal = { family = "JetBrainsMonoNerdFont", style = "Regular" }
+bold = { family = "JetBrainsMonoNerdFont", style = "Bold" }
+italic = { family = "JetBrainsMonoNerdFont", style = "Italic" }
+bold_italic = { family = "JetBrainsMonoNerdFont", style = "BoldItalic" }
 size = 12.0
 
 [colors.primary]
